@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  
-  
+<head>  
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   window.OneSignal = window.OneSignal || [];
@@ -12,13 +9,17 @@
       appId: "40b75c0e-1832-4204-b225-18e72c4bf862",
     });
   });
-</script>
-  
-  
+</script>  
 </head>
-
 <body>
-
-
+  <script>
+  OneSignal.push(function() {
+  /* These examples are all valid */
+  OneSignal.getUserId(function(userId) {
+    console.log("OneSignal User ID:", userId);
+    // (Output) OneSignal User ID: 270a35cd-4dda-4b3f-b04e-41d7463a2316    
+    });
+  });
+  </script>
 </body>
 </html>
