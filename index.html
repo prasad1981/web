@@ -13,6 +13,8 @@
     //});
     await OneSignal.init({
             appId: "40b75c0e-1832-4204-b225-18e72c4bf862",
+            serviceWorkerParam: { scope: "/web" },
+            serviceWorkerPath: "/web/OneSignalSDKWorker.js"
     });
   });
 </script>  
